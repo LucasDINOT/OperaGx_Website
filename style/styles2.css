@@ -1,0 +1,204 @@
+section
+  {
+      position:relative;
+      height: 1000px;
+      overflow: hidden;
+      z-index: -1;
+  }
+  .bg
+  {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(img/background.jpg);
+      background-repeat: no-repeat;
+      background-size: calc(100% + var(--x)/2);
+      background-position:bottom;
+  }
+  section .micka
+  {
+      position:absolute;
+      top:40%;
+      width: 400px;
+      left: 20%;
+      max-width: calc(400px - var(--x)/30);
+  }
+  section h2
+  {
+      position :absolute;
+      top:50%;
+      width: 100%;
+      color:white;
+      font-size: 8em;
+      text-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+      transform: translate(calc(100% - var(--x)*2), -50%);
+  }
+  #bloc1 {
+    margin-top: 5rem;
+    width: 100%;
+    height: 600px;
+    display: flex;
+  }
+  #reservation button {
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+  #reservation {
+    width: 450px;
+    height: 500px;
+    margin-left: 23rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  #res1 {
+    margin: 30px 125px;
+  }
+  #res2 {
+    margin: 30px 50px;
+  }
+  #reservation p {
+    width: 75%;
+    margin-left: 50px;
+    margin-top: 0px;
+  }
+  .button{
+    border: 2px solid #ff0000;
+    background: none;
+    height: 55px;
+    width: 250px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    border-radius: 60px;
+  }
+  .button2{
+    border: 2px solid #ff0000;
+    background: none;
+    height: 55px;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    border-radius: 60px;
+  }
+  .button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #ff0000;
+    z-index: -1;
+    transition: 0.8s;
+  }
+  .button2::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #ff0000;
+    z-index: -1;
+    transition: 0.8s;
+  }
+  .btncontact{
+    color: #ff0000;
+  }
+  .btncontact:hover{
+    color: #fff;
+    transition: .8s;
+  }
+  .btncontact::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+  }
+  .btncontact:hover::before{
+    height: 200%;
+  }
+  #acces {
+    width: 450px;
+    height: 500px;
+    margin-left: 23rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+                  rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+                rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+                rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  #acces img {
+      margin: 30px 125px;
+  }
+  #acces p {
+      width: 75%;
+      margin-left: 50px;
+      margin-top: 0px;
+  }
+  #acces button {
+      margin-top: 20px;
+      margin-left: 125px;
+    }
+  #affiches {
+      width: 100%;
+      height: 630px;
+      display: flex;
+      margin-left: 120px;
+      margin-right: 120px;
+  }
+  #affiches img {
+      margin-left: 75px;
+      height: 450px;
+      width: 300px;
+  }
+  #affiches p {
+      width: 75%;
+      margin-left: 75px;
+  }
+  #prog1 {
+      width: 400px;
+      height: 600px;
+  }
+  #prog2 {
+      width: 400px;
+      height: 600px;
+      margin-left: 10px;
+  }
+  #prog3 {
+      width: 400px;
+      height: 600px;
+      margin-left: 10px;
+  }
+  #prog4 {
+      width: 400px;
+      height: 600px;
+      margin-left: 10px;
+  }
+  #knowmore {
+      position: relative;
+      float: right;
+      margin-right: 150px;
+  }
+  #bloc3 {
+      position: relative;
+      margin-top: 90px;
+      width: 75%;
+      margin-left: 17rem;
+  }
+::-webkit-scrollbar {
+    width: 1rem;
+}::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}::-webkit-scrollbar-thumb {
+    background-color: #8d8d8d;
+    outline: 1px solid #8d8d8d;
+}
